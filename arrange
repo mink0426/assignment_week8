@@ -1,0 +1,10 @@
+#!/bin/bash
+
+start_l=(a b c d e f g h i j k l m n o p q r s t u v w x y z)
+start_u=(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+
+for i in {0..25}; do
+    for file in ["${start_l[i]}""${start_u[i]}"]*; do
+        mv "$file" "../"${start_l[i]}"/"
+    done
+done
